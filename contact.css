@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: gold;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #f1e2c6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .shop-name{
+    font-size: 28px;
+    font-weight: bold;
+    color: goldenrod;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .shop-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .brand-link {
+    text-decoration: none;
+    color: #c28700;
+    transition: color 0.3s ease;
+  }
+  
+  .brand-link:hover {
+    color: #a76f00;
+  }  
+  @keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+
+  
+  section {
+    padding: 40px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+  }
+
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact-left {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .large-map {
+    padding-bottom: 56.25%; 
+    height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .large-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #f1e2c6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .shop-name{
+    font-size: 28px;
+    font-weight: bold;
+    color: goldenrod;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .shop-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .brand-link {
+    text-decoration: none;
+    color: #c28700;
+    transition: color 0.3s ease;
+  }
+  
+  .brand-link:hover {
+    color: #a76f00;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: black;
+    animation: fadeIn 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: gold;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    color: gold;
+  }
+  
+  .highlight {
+    color: goldenrod;
+    font-weight: bold;
+  }
+  
+  .image-content img {
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .owner-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff0d9;
+    animation: fadeIn 1.2s ease-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+  
+  .owner-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid goldenrod;
+  }
+  h1{
+    color: gold;
+  }
+  
