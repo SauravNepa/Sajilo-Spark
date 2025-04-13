@@ -1,126 +1,144 @@
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: gold;
-    background-color: gold;
-  } 
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: #f1e2c6;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .shop-name{
-    font-size: 28px;
-    font-weight: bold;
-    color: goldenrod;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-  }
-  .shop-name {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .brand-link {
-    text-decoration: none;
-    color: #c28700;
-    transition: color 0.3s ease;
-  }
-  
-  .brand-link:hover {
-    color: #a76f00;
-  }  
-  @keyframes slideDown {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-  
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: gold;
+  background-color: gold;
+}
 
-  .about-container {
-    position: relative;
-    display: flex;
-    align-items: stretch;
-    min-height: 600px;
-    overflow: hidden;
-  }
-  
-  .aboutinfo-shape {
-    background-color: black;
-    width: 100%;
-    clip-path: polygon(0 0, 70% 0, 60% 100%, 0% 100%);
-    padding: 80px 32px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .about-text {
-    max-width: 600px;
-    margin-left: 32px;
-  }
-  
-  .about-text h1 {
-    font-size: 48px;
-    margin-bottom: 24px;
-    color: gold;
-  }
-  
-  .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: gold;
-  }
-  .about-image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 40%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 32px;
-  }
-  
-  .about-image img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-  .mission-vision {
-    background-color: white;
-    text-align: center;
-    color: gold;
-    padding: 48px 32rem;
-  }
-  
-  .mission, .vision {
-    margin-bottom: 32px;
-  }
-  
-  .mission h2, .vision h2 {
-    color: gold;
-    margin-bottom: 16px;
-  }
-  
-  .mission p, .vision p {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 16px;
-  }
-  
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #f1e2c6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.shop-name {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: goldenrod;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: #c28700;
+  transition: color 0.3s ease;
+}
+
+.brand-link:hover {
+  color: #a76f00;
+}
+
+.about-container {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.aboutinfo-shape {
+  background-color: black;
+  width: 100%;
+  clip-path: polygon(0 0, 70% 0, 60% 100%, 0% 100%);
+  padding: 80px 32px;
+  display: flex;
+  align-items: center;
+  animation: slideDown 1s ease-out forwards;
+  opacity: 0;
+}
+
+.about-text {
+  max-width: 600px;
+  margin-left: 32px;
+  animation: fadeIn 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+.about-text h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  color: gold;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: gold;
+}
+
+.about-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 32px;
+  animation: fadeIn 1.4s ease-out forwards;
+  opacity: 0;
+}
+
+.about-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.mission-vision {
+  background-color: white;
+  text-align: center;
+  color: gold;
+  padding: 48px 32rem;
+  animation: fadeIn 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.mission, .vision {
+  margin-bottom: 32px;
+}
+
+.mission h2, .vision h2 {
+  color: gold;
+  margin-bottom: 16px;
+}
+
+.mission p, .vision p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+}

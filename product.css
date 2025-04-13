@@ -18,6 +18,17 @@
     background-color: #f1e2c6;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+   .brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 40px; 
+    width: auto;
+    object-fit: contain;
+  }
   
   .shop-name{
     font-size: 28px;
@@ -55,6 +66,10 @@
   .products {
     padding: 40px;
     text-align: center;
+      padding: 40px;
+      text-align: center;
+      animation: slideDown 1s ease-out forwards;
+    
   }
   
   .products h2 {
